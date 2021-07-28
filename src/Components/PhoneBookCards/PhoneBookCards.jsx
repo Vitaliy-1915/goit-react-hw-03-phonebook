@@ -43,14 +43,13 @@ export default class PhoneBookCards extends Component {
     });
   };
 
-  onDeleteContact = (contactId) => {
-    console.log(contactId);
-    this.setState((prevState) => ({
-      contacts: prevState.contacts.filter(
-        (contact) => contact.id !== contactId
-      ),
-    }));
-  };
+  // onDeleteContact = contactId => {
+  //   console.log(contactId);
+  //   this.setState(prevState =>
+  //   ({contacts: prevState.contacts.filter(contact =>
+  //       contact.id !== contactId),
+  //    }));
+  // };
 
   componentDidMount() {
     const contacts = localStorage.getItem("contacts");
@@ -87,7 +86,7 @@ export default class PhoneBookCards extends Component {
 
         <ContactLists
           contacts={filterContacts}
-          onDeleteContact={this.onDeleteContact}
+          // onDeleteContact={this.onDeleteContact}
         />
       </PhoneBookCard>
     );
