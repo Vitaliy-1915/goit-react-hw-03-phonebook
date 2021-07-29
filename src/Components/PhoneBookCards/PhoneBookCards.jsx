@@ -87,7 +87,7 @@ export default class PhoneBookCards extends Component {
 
         <ContactLists
           contacts={filterContacts}
-          // onDeleteContact={this.onDeleteContact}
+          onDeleteContact={this.onDeleteContact}
         />
       </PhoneBookCard>
     );
