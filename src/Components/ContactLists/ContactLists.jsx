@@ -12,7 +12,7 @@ function ContactLists({ contacts, onDeleteContact }) {
           <Button
             type="button"
             text="Delete"
-            // onClick={onDeleteContact(id)}
+            onClick={() => onDeleteContact(id)}
           />
         </ContactListItem>
       ))}
